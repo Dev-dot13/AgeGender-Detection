@@ -17,6 +17,3 @@ Real-time age and gender detection system using VGG16-based multi-task learning.
 ## Usage
 1. Install requirements: `pip install -r requirements.txt`
 2. Run real-time detection: `python src/realtime_detection.py`
-
-## Model Training
-To retrain the model:
