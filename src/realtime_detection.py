@@ -20,7 +20,7 @@ class AgeGenderDetector:
         age_pred, gender_pred = self.model.predict(processed)
         
         age = np.argmax(age_pred[0])
-        gender = "Male" if np.argmax(gender_pred[0]) == 1 else "Female"
+        gender = "Male" if np.argmax(gender_pred[0]) == 0 else "Female"
         
         return age, gender
     

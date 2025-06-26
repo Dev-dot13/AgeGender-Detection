@@ -39,7 +39,7 @@ def create_multi_task_model(input_shape=(224, 224, 3), age_classes=9, gender_cla
     
     return model
 
-def train_model(model, X_train, y_age_train, y_gender_train, X_val, y_age_val, y_gender_val, epochs=50, batch_size=32):
+def train_model(model, X_train, y_age_train, y_gender_train, X_val, y_age_val, y_gender_val, epochs=10, batch_size=32):
     history = model.fit(
         X_train,
         {'age_output': y_age_train, 'gender_output': y_gender_train},
